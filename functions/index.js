@@ -99,4 +99,54 @@ app.post('/signup', (req, res) => {
   })
 });
 
+app.get('/reservations',(req,res) => {
+  if (Object.keys(req.body).length > 0)
+    res.status(500).json({error: "not implemented yet"})
+  else  {
+    db.collection("reservations").where('at','>=',new Date()).limit(10).get().then(
+      docs => {
+        docs.forEach(doc => {
+          let resp = doc.data()
+          resp["reserveId"] = doc.id
+          res.write(JSON.stringify(resp) + "\n")
+        })
+        res.end()
+      })
+  }
+})
+
+app.put('/reservations',(req,res)=>{
+  db.doc(`/reservations/${req.body.reserveId}`).get().then(
+    doc =>{
+      if (!doc.exists)
+      {
+        res.status(404).json({"error":`Reservation ID: ${req.body.reserveId} not found`})
+      }
+      let current_state = doc.data()
+      if (current_state["reserved_for"])
+      {
+        res.status(403).json({"error": `Reservation ID: ${req.body.reserveId} already reserved`})
+      }
+      db.doc(`/groups/${req.body.groupName}`).get().then(
+        doc => {
+          if (doc.exists)
+            db.doc(`/reservations/${req.body.reserveId}`).update({"reserved_for": req.body.groupName}).then(doc =>res.sendStatus(200)).catch(err => {
+              console.error(err)
+              res.status(500).json({"error": "unable to update file"})
+            })
+          else
+              res.status(404).json({"error": `Group ${req.body.groupName} not found`})
+        }).catch(err =>{
+          console.error(err)
+          res.status(500).json({"error": `Error looking for Group ${req.body.groupName}`})
+        })}).catch(err => console.error(err))
+})
+
+app.delete('/reservation',(req,res) =>{
+  db.doc(`/reservations/${req.body.reserveId}`).delete().then(res.sendStatus(204)).catch(err => {
+    console.error(err)
+    res.status(500).json({"error": `cannot delete reservation ${req.body.reserveId}`})
+  })
+})
+
 exports.api = functions.region('europe-west1').https.onRequest(app)

@@ -1,0 +1,723 @@
+[debug] [2020-02-26T21:45:40.652Z] ----------------------------------------------------------------------
+[debug] [2020-02-26T21:45:40.654Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shaiel Cohen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2020-02-26T21:45:40.654Z] CLI Version:   7.13.1
+[debug] [2020-02-26T21:45:40.654Z] Platform:      win32
+[debug] [2020-02-26T21:45:40.654Z] Node Version:  v10.16.3
+[debug] [2020-02-26T21:45:40.655Z] Time:          Wed Feb 26 2020 23:45:40 GMT+0200 (Israel Standard Time)
+[debug] [2020-02-26T21:45:40.655Z] ----------------------------------------------------------------------
+[debug] [2020-02-26T21:45:40.655Z] 
+[debug] [2020-02-26T21:45:40.662Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-26T21:45:40.663Z] > authorizing via signed-in user
+[debug] [2020-02-26T21:45:40.663Z] [iam] checking project autonomous-escape-room for permissions ["firebase.projects.get"]
+[debug] [2020-02-26T21:45:40.664Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-26T21:45:40.664Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-26T21:45:41.032Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-26T21:45:41.038Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/autonomous-escape-room:testIamPermissions  
+
+[debug] [2020-02-26T21:45:42.171Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-26T21:45:42.172Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/autonomous-escape-room  
+ 
+[debug] [2020-02-26T21:45:42.682Z] <<< HTTP RESPONSE 200
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions" for Cloud Functions...
+[debug] [2020-02-26T21:45:43.706Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:45:43.706Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-26T21:45:43.706Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:45:43.706Z] [worker-~diagnostic~-ef53bb43-1030-4938-b540-173201fb75cc]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\7108
+[debug] [2020-02-26T21:45:43.706Z] [worker-~diagnostic~-ef53bb43-1030-4938-b540-173201fb75cc]: BUSY
+[debug] [2020-02-26T21:45:44.170Z] [runtime-status] [7108] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:45:44.172Z] [runtime-status] [7108] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:45:44.175Z] [runtime-status] [7108] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:45:44.178Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-26T21:45:44.178Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-26T21:45:44.178Z] Accepted request POST /autonomous-escape-room/europe-west1/api/reservations --> api
+[debug] [2020-02-26T21:45:44.181Z] [worker-pool] addWorker(api)
+[debug] [2020-02-26T21:45:44.181Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-02-26T21:45:44.181Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-26T21:45:44.182Z] [worker-api-c811117e-2e88-4603-8dec-b9eb75708b24]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\2996
+[debug] [2020-02-26T21:45:44.182Z] [worker-api-c811117e-2e88-4603-8dec-b9eb75708b24]: BUSY
+[debug] [2020-02-26T21:45:44.182Z] [runtime-status] [7108] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:45:44.184Z] [runtime-status] [7108] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:45:44.620Z] [runtime-status] [2996] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:45:44.622Z] [runtime-status] [2996] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:45:44.626Z] [runtime-status] [2996] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:45:44.627Z] [runtime-status] [2996] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:45:44.628Z] [runtime-status] [2996] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[api]: http function initialized (http://localhost:5000/autonomous-escape-room/europe-west1/api).
+[debug] [2020-02-26T21:45:44.985Z] [worker-~diagnostic~-ef53bb43-1030-4938-b540-173201fb75cc]: IDLE
+[debug] [2020-02-26T21:45:45.319Z] [runtime-status] [2996] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-26T21:45:45.320Z] [runtime-status] [2996] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-26T21:45:45.320Z] [runtime-status] [2996] Running api in mode HTTPS
+[debug] [2020-02-26T21:45:45.323Z] [runtime-status] [2996] Attempting to listen to socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\2996
+[debug] [2020-02-26T21:45:45.328Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-26T21:45:45.348Z] [runtime-status] [2996] Ephemeral server handling POST request
+[debug] [2020-02-26T21:45:45.352Z] [runtime-status] [2996] Ephemeral server survived.
+[info] >  (node:2996) UnhandledPromiseRejectionWarning: ReferenceError: newGroup is not defined
+[info] >      at db.doc.get.then.doc (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:130:25)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:2996) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[info] >  (node:2996) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2020-02-26T21:46:03.055Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:46:04.056Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:46:04.056Z] [worker-~diagnostic~-ef53bb43-1030-4938-b540-173201fb75cc]: FINISHING
+[debug] [2020-02-26T21:46:04.056Z] [worker-pool] Marking BUSY worker to finish (api)
+[debug] [2020-02-26T21:46:04.056Z] [worker-api-c811117e-2e88-4603-8dec-b9eb75708b24]: FINISHING
+[debug] [2020-02-26T21:46:04.061Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:46:04.062Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:46:04.062Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:46:04.062Z] [worker-~diagnostic~-168db4b4-057b-4bc7-a8d8-29e69dfa10ef]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\14536
+[debug] [2020-02-26T21:46:04.062Z] [worker-~diagnostic~-168db4b4-057b-4bc7-a8d8-29e69dfa10ef]: BUSY
+[debug] [2020-02-26T21:46:04.064Z] [worker-~diagnostic~-ef53bb43-1030-4938-b540-173201fb75cc]: exited
+[debug] [2020-02-26T21:46:04.064Z] [worker-~diagnostic~-ef53bb43-1030-4938-b540-173201fb75cc]: FINISHED
+[debug] [2020-02-26T21:46:04.468Z] [runtime-status] [14536] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:46:04.469Z] [runtime-status] [14536] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:46:04.472Z] [runtime-status] [14536] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:46:04.473Z] [runtime-status] [14536] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:46:04.474Z] [runtime-status] [14536] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:46:05.139Z] [worker-~diagnostic~-168db4b4-057b-4bc7-a8d8-29e69dfa10ef]: IDLE
+[debug] [2020-02-26T21:46:09.275Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:46:10.276Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:46:10.276Z] [worker-~diagnostic~-168db4b4-057b-4bc7-a8d8-29e69dfa10ef]: FINISHING
+[debug] [2020-02-26T21:46:10.276Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:46:10.280Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:46:10.280Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:46:10.280Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:46:10.280Z] [worker-~diagnostic~-d1cfb6f5-986a-43dd-a5b0-2aa93e7ea4c4]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\1636
+[debug] [2020-02-26T21:46:10.280Z] [worker-~diagnostic~-d1cfb6f5-986a-43dd-a5b0-2aa93e7ea4c4]: BUSY
+[debug] [2020-02-26T21:46:10.285Z] [worker-~diagnostic~-168db4b4-057b-4bc7-a8d8-29e69dfa10ef]: exited
+[debug] [2020-02-26T21:46:10.285Z] [worker-~diagnostic~-168db4b4-057b-4bc7-a8d8-29e69dfa10ef]: FINISHED
+[debug] [2020-02-26T21:46:10.664Z] [runtime-status] [1636] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:46:10.665Z] [runtime-status] [1636] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:46:10.669Z] [runtime-status] [1636] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:46:10.671Z] [runtime-status] [1636] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:46:10.672Z] [runtime-status] [1636] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:46:11.374Z] [worker-~diagnostic~-d1cfb6f5-986a-43dd-a5b0-2aa93e7ea4c4]: IDLE
+[debug] [2020-02-26T21:46:13.901Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-26T21:46:13.901Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-26T21:46:13.901Z] Accepted request POST /autonomous-escape-room/europe-west1/api/reservations --> api
+[debug] [2020-02-26T21:46:13.902Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:46:13.907Z] [worker-pool] addWorker(api)
+[debug] [2020-02-26T21:46:13.907Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-02-26T21:46:13.907Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-26T21:46:13.907Z] [worker-api-715bdd93-08a7-48b6-9ab1-605f916f874f]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\7492
+[debug] [2020-02-26T21:46:13.907Z] [worker-api-715bdd93-08a7-48b6-9ab1-605f916f874f]: BUSY
+[debug] [2020-02-26T21:46:14.307Z] [runtime-status] [7492] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:46:14.309Z] [runtime-status] [7492] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:46:14.312Z] [runtime-status] [7492] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:46:14.313Z] [runtime-status] [7492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:46:14.314Z] [runtime-status] [7492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:46:14.988Z] [runtime-status] [7492] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-26T21:46:14.989Z] [runtime-status] [7492] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-26T21:46:14.989Z] [runtime-status] [7492] Running api in mode HTTPS
+[debug] [2020-02-26T21:46:14.992Z] [runtime-status] [7492] Attempting to listen to socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\7492
+[debug] [2020-02-26T21:46:14.995Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-26T21:46:15.013Z] [runtime-status] [7492] Ephemeral server handling POST request
+[debug] [2020-02-26T21:46:15.016Z] [runtime-status] [7492] Ephemeral server survived.
+[info] >  (node:7492) UnhandledPromiseRejectionWarning: ReferenceError: newGroup is not defined
+[info] >      at db.doc.get.then.doc (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:130:25)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:7492) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[info] >  (node:7492) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2020-02-26T21:46:45.572Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:46:46.572Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:46:46.572Z] [worker-~diagnostic~-d1cfb6f5-986a-43dd-a5b0-2aa93e7ea4c4]: FINISHING
+[debug] [2020-02-26T21:46:46.572Z] [worker-pool] Marking BUSY worker to finish (api)
+[debug] [2020-02-26T21:46:46.573Z] [worker-api-715bdd93-08a7-48b6-9ab1-605f916f874f]: FINISHING
+[debug] [2020-02-26T21:46:46.579Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:46:46.579Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:46:46.580Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:46:46.580Z] [worker-~diagnostic~-dd6890b6-4e5a-4118-918d-66b7b092d256]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\10788
+[debug] [2020-02-26T21:46:46.580Z] [worker-~diagnostic~-dd6890b6-4e5a-4118-918d-66b7b092d256]: BUSY
+[debug] [2020-02-26T21:46:46.580Z] [worker-~diagnostic~-d1cfb6f5-986a-43dd-a5b0-2aa93e7ea4c4]: exited
+[debug] [2020-02-26T21:46:46.580Z] [worker-~diagnostic~-d1cfb6f5-986a-43dd-a5b0-2aa93e7ea4c4]: FINISHED
+[debug] [2020-02-26T21:46:46.956Z] [runtime-status] [10788] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:46:46.958Z] [runtime-status] [10788] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:46:46.961Z] [runtime-status] [10788] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:46:46.962Z] [runtime-status] [10788] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:46:46.964Z] [runtime-status] [10788] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:46:47.625Z] [worker-~diagnostic~-dd6890b6-4e5a-4118-918d-66b7b092d256]: IDLE
+[debug] [2020-02-26T21:46:51.507Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-02-26T21:46:51.507Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-02-26T21:46:51.507Z] Accepted request POST /autonomous-escape-room/europe-west1/api/reservations --> api
+[debug] [2020-02-26T21:46:51.507Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:46:51.513Z] [worker-pool] addWorker(api)
+[debug] [2020-02-26T21:46:51.513Z] [worker-pool] Adding worker with key api, total=3
+[debug] [2020-02-26T21:46:51.513Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-26T21:46:51.513Z] [worker-api-236833d4-5af1-4c64-82dd-fbc0b77a1db0]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\6668
+[debug] [2020-02-26T21:46:51.513Z] [worker-api-236833d4-5af1-4c64-82dd-fbc0b77a1db0]: BUSY
+[debug] [2020-02-26T21:46:51.889Z] [runtime-status] [6668] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:46:51.890Z] [runtime-status] [6668] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:46:51.893Z] [runtime-status] [6668] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:46:51.894Z] [runtime-status] [6668] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:46:51.895Z] [runtime-status] [6668] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:46:52.610Z] [runtime-status] [6668] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-26T21:46:52.611Z] [runtime-status] [6668] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-26T21:46:52.611Z] [runtime-status] [6668] Running api in mode HTTPS
+[debug] [2020-02-26T21:46:52.614Z] [runtime-status] [6668] Attempting to listen to socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\6668
+[debug] [2020-02-26T21:46:52.621Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-26T21:46:52.645Z] [runtime-status] [6668] Ephemeral server handling POST request
+[debug] [2020-02-26T21:46:52.649Z] [runtime-status] [6668] Ephemeral server survived.
+[info] >  ReferenceError: newGroup is not defined
+[info] >      at db.doc.get.then.doc (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:130:25)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[debug] [2020-02-26T21:47:10.975Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:47:11.976Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:47:11.976Z] [worker-~diagnostic~-dd6890b6-4e5a-4118-918d-66b7b092d256]: FINISHING
+[debug] [2020-02-26T21:47:11.976Z] [worker-pool] Marking BUSY worker to finish (api)
+[debug] [2020-02-26T21:47:11.976Z] [worker-api-236833d4-5af1-4c64-82dd-fbc0b77a1db0]: FINISHING
+[debug] [2020-02-26T21:47:11.982Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:47:11.982Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:47:11.982Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:47:11.982Z] [worker-~diagnostic~-65de6333-d486-41a9-9736-554f447c547f]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\9920
+[debug] [2020-02-26T21:47:11.982Z] [worker-~diagnostic~-65de6333-d486-41a9-9736-554f447c547f]: BUSY
+[debug] [2020-02-26T21:47:11.984Z] [worker-~diagnostic~-dd6890b6-4e5a-4118-918d-66b7b092d256]: exited
+[debug] [2020-02-26T21:47:11.984Z] [worker-~diagnostic~-dd6890b6-4e5a-4118-918d-66b7b092d256]: FINISHED
+[debug] [2020-02-26T21:47:12.392Z] [runtime-status] [9920] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:47:12.394Z] [runtime-status] [9920] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:47:12.397Z] [runtime-status] [9920] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:47:12.399Z] [runtime-status] [9920] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:47:12.400Z] [runtime-status] [9920] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:47:13.060Z] [worker-~diagnostic~-65de6333-d486-41a9-9736-554f447c547f]: IDLE
+[debug] [2020-02-26T21:47:16.133Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-02-26T21:47:16.133Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-02-26T21:47:16.134Z] Accepted request POST /autonomous-escape-room/europe-west1/api/reservations --> api
+[debug] [2020-02-26T21:47:16.134Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:47:16.139Z] [worker-pool] addWorker(api)
+[debug] [2020-02-26T21:47:16.139Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-02-26T21:47:16.139Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-26T21:47:16.139Z] [worker-api-a66e7147-543c-4366-9ca9-a5dacebad138]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\11160
+[debug] [2020-02-26T21:47:16.139Z] [worker-api-a66e7147-543c-4366-9ca9-a5dacebad138]: BUSY
+[debug] [2020-02-26T21:47:16.520Z] [runtime-status] [11160] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:47:16.522Z] [runtime-status] [11160] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:47:16.525Z] [runtime-status] [11160] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:47:16.526Z] [runtime-status] [11160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:47:16.528Z] [runtime-status] [11160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:47:17.241Z] [runtime-status] [11160] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-26T21:47:17.242Z] [runtime-status] [11160] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-26T21:47:17.243Z] [runtime-status] [11160] Running api in mode HTTPS
+[debug] [2020-02-26T21:47:17.245Z] [runtime-status] [11160] Attempting to listen to socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\11160
+[debug] [2020-02-26T21:47:17.248Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-26T21:47:17.271Z] [runtime-status] [11160] Ephemeral server handling POST request
+[debug] [2020-02-26T21:47:17.275Z] [runtime-status] [11160] Ephemeral server survived.
+[info] >  QueryDocumentSnapshot {
+[info] >    _fieldsProto:
+[info] >     { roomFinishTime: { timestampValue: [Object], valueType: 'timestampValue' },
+[info] >       score: { integerValue: '0', valueType: 'integerValue' },
+[info] >       groupName: { stringValue: 'admins', valueType: 'stringValue' },
+[info] >       invitedUsersId: { arrayValue: [Object], valueType: 'arrayValue' },
+[info] >       roomStartTime: { timestampValue: [Object], valueType: 'timestampValue' },
+[info] >       users: { arrayValue: [Object], valueType: 'arrayValue' } },
+[info] >    _ref:
+[info] >     DocumentReference {
+[info] >       _firestore:
+[info] >        Firestore {
+[info] >          _settings: [Object],
+[info] >          _settingsFrozen: true,
+[info] >          _serializer: [Serializer],
+[info] >          _projectId: 'autonomous-escape-room',
+[info] >          registeredListenersCount: 0,
+[info] >          _lastSuccessfulRequest: 1582753638336,
+[info] >          _backoffSettings: [Object],
+[info] >          _preferTransactions: false,
+[info] >          _clientPool: [ClientPool] },
+[info] >       _path: ResourcePath { segments: [Array] },
+[info] >       _converter:
+[info] >        { toFirestore: [Function: toFirestore],
+[info] >          fromFirestore: [Function: fromFirestore] } },
+[info] >    _serializer: Serializer { createReference: [Function] },
+[info] >    _readTime: Timestamp { _seconds: 1582753635, _nanoseconds: 119043000 },
+[info] >    _createTime: Timestamp { _seconds: 1582059992, _nanoseconds: 138018000 },
+[info] >    _updateTime: Timestamp { _seconds: 1582655989, _nanoseconds: 227822000 } }
+[info] >  TypeError: doc.update is not a function
+[info] >      at db.doc.get.then.doc (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:134:17)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-26T21:47:18.356Z] [worker-api-a66e7147-543c-4366-9ca9-a5dacebad138]: IDLE
+[debug] [2020-02-26T21:47:18.356Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-02-26T21:49:50.765Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:49:51.765Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:49:51.765Z] [worker-~diagnostic~-65de6333-d486-41a9-9736-554f447c547f]: FINISHING
+[debug] [2020-02-26T21:49:51.765Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-02-26T21:49:51.765Z] [worker-api-a66e7147-543c-4366-9ca9-a5dacebad138]: FINISHING
+[debug] [2020-02-26T21:49:51.772Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:49:51.772Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:49:51.772Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:49:51.772Z] [worker-~diagnostic~-cf13ae8e-d525-45b3-92df-afd26637dba8]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\15724
+[debug] [2020-02-26T21:49:51.772Z] [worker-~diagnostic~-cf13ae8e-d525-45b3-92df-afd26637dba8]: BUSY
+[debug] [2020-02-26T21:49:51.775Z] [worker-~diagnostic~-65de6333-d486-41a9-9736-554f447c547f]: exited
+[debug] [2020-02-26T21:49:51.775Z] [worker-~diagnostic~-65de6333-d486-41a9-9736-554f447c547f]: FINISHED
+[debug] [2020-02-26T21:49:51.775Z] [worker-api-a66e7147-543c-4366-9ca9-a5dacebad138]: exited
+[debug] [2020-02-26T21:49:51.775Z] [worker-api-a66e7147-543c-4366-9ca9-a5dacebad138]: FINISHED
+[debug] [2020-02-26T21:49:52.153Z] [runtime-status] [15724] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:49:52.156Z] [runtime-status] [15724] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:49:52.158Z] [runtime-status] [15724] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:49:52.160Z] [runtime-status] [15724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:49:52.161Z] [runtime-status] [15724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:134
+            db.doc(`/reservations/${req.body.reserveId}).update({"reserved_for": req.body.groupName}).then(doc =>
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at C:\Users\Shaiel Cohen\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\Shaiel Cohen\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-26T21:49:52.216Z] [worker-~diagnostic~-cf13ae8e-d525-45b3-92df-afd26637dba8]: exited
+[debug] [2020-02-26T21:49:52.216Z] [worker-~diagnostic~-cf13ae8e-d525-45b3-92df-afd26637dba8]: FINISHED
+[debug] [2020-02-26T21:49:52.724Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:49:53.725Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-02-26T21:49:53.725Z] [worker-pool] Cleaned up workers for api: 4 --> 3
+[debug] [2020-02-26T21:49:53.731Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:49:53.731Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-26T21:49:53.731Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:49:53.731Z] [worker-~diagnostic~-ab57d29b-3452-4d2c-85d5-ed08dccaa077]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\11024
+[debug] [2020-02-26T21:49:53.731Z] [worker-~diagnostic~-ab57d29b-3452-4d2c-85d5-ed08dccaa077]: BUSY
+[debug] [2020-02-26T21:49:54.096Z] [runtime-status] [11024] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:49:54.098Z] [runtime-status] [11024] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:49:54.101Z] [runtime-status] [11024] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:49:54.102Z] [runtime-status] [11024] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:49:54.104Z] [runtime-status] [11024] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:49:54.749Z] [worker-~diagnostic~-ab57d29b-3452-4d2c-85d5-ed08dccaa077]: IDLE
+[debug] [2020-02-26T21:49:57.859Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:49:58.859Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:49:58.859Z] [worker-~diagnostic~-ab57d29b-3452-4d2c-85d5-ed08dccaa077]: FINISHING
+[debug] [2020-02-26T21:49:58.864Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:49:58.864Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:49:58.864Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:49:58.865Z] [worker-~diagnostic~-cd070ff9-b343-4875-ac21-ece0b5272d31]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\10296
+[debug] [2020-02-26T21:49:58.865Z] [worker-~diagnostic~-cd070ff9-b343-4875-ac21-ece0b5272d31]: BUSY
+[debug] [2020-02-26T21:49:58.868Z] [worker-~diagnostic~-ab57d29b-3452-4d2c-85d5-ed08dccaa077]: exited
+[debug] [2020-02-26T21:49:58.868Z] [worker-~diagnostic~-ab57d29b-3452-4d2c-85d5-ed08dccaa077]: FINISHED
+[debug] [2020-02-26T21:49:59.203Z] [runtime-status] [10296] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:49:59.205Z] [runtime-status] [10296] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:49:59.208Z] [runtime-status] [10296] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:49:59.209Z] [runtime-status] [10296] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:49:59.211Z] [runtime-status] [10296] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:49:59.823Z] [worker-~diagnostic~-cd070ff9-b343-4875-ac21-ece0b5272d31]: IDLE
+[debug] [2020-02-26T21:50:05.862Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:50:06.864Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:50:06.865Z] [worker-~diagnostic~-cd070ff9-b343-4875-ac21-ece0b5272d31]: FINISHING
+[debug] [2020-02-26T21:50:06.865Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:50:06.871Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:50:06.871Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:50:06.871Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:50:06.871Z] [worker-~diagnostic~-93184fbe-1ec2-4bca-ad89-09d902fd62be]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\10368
+[debug] [2020-02-26T21:50:06.871Z] [worker-~diagnostic~-93184fbe-1ec2-4bca-ad89-09d902fd62be]: BUSY
+[debug] [2020-02-26T21:50:06.873Z] [worker-~diagnostic~-cd070ff9-b343-4875-ac21-ece0b5272d31]: exited
+[debug] [2020-02-26T21:50:06.874Z] [worker-~diagnostic~-cd070ff9-b343-4875-ac21-ece0b5272d31]: FINISHED
+[debug] [2020-02-26T21:50:07.222Z] [runtime-status] [10368] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:50:07.224Z] [runtime-status] [10368] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:50:07.227Z] [runtime-status] [10368] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:50:07.228Z] [runtime-status] [10368] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:50:07.229Z] [runtime-status] [10368] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:50:07.905Z] [worker-~diagnostic~-93184fbe-1ec2-4bca-ad89-09d902fd62be]: IDLE
+[debug] [2020-02-26T21:50:14.673Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-02-26T21:50:14.673Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-02-26T21:50:14.673Z] Accepted request POST /autonomous-escape-room/europe-west1/api/reservations --> api
+[debug] [2020-02-26T21:50:14.673Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:50:14.679Z] [worker-pool] addWorker(api)
+[debug] [2020-02-26T21:50:14.679Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-02-26T21:50:14.679Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-26T21:50:14.679Z] [worker-api-6e81cac1-b530-4bd7-814f-e525c13b4d96]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\4172
+[debug] [2020-02-26T21:50:14.679Z] [worker-api-6e81cac1-b530-4bd7-814f-e525c13b4d96]: BUSY
+[debug] [2020-02-26T21:50:15.065Z] [runtime-status] [4172] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:50:15.067Z] [runtime-status] [4172] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:50:15.070Z] [runtime-status] [4172] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:50:15.072Z] [runtime-status] [4172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:50:15.073Z] [runtime-status] [4172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:50:15.777Z] [runtime-status] [4172] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-26T21:50:15.778Z] [runtime-status] [4172] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-26T21:50:15.778Z] [runtime-status] [4172] Running api in mode HTTPS
+[debug] [2020-02-26T21:50:15.780Z] [runtime-status] [4172] Attempting to listen to socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\4172
+[debug] [2020-02-26T21:50:15.783Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-26T21:50:15.803Z] [runtime-status] [4172] Ephemeral server handling POST request
+[debug] [2020-02-26T21:50:15.807Z] [runtime-status] [4172] Ephemeral server survived.
+[info] >  QueryDocumentSnapshot {
+[info] >    _fieldsProto:
+[info] >     { users: { arrayValue: [Object], valueType: 'arrayValue' },
+[info] >       roomFinishTime: { timestampValue: [Object], valueType: 'timestampValue' },
+[info] >       score: { integerValue: '0', valueType: 'integerValue' },
+[info] >       groupName: { stringValue: 'admins', valueType: 'stringValue' },
+[info] >       invitedUsersId: { arrayValue: [Object], valueType: 'arrayValue' },
+[info] >       roomStartTime: { timestampValue: [Object], valueType: 'timestampValue' } },
+[info] >    _ref:
+[info] >     DocumentReference {
+[info] >       _firestore:
+[info] >        Firestore {
+[info] >          _settings: [Object],
+[info] >          _settingsFrozen: true,
+[info] >          _serializer: [Serializer],
+[info] >          _projectId: 'autonomous-escape-room',
+[info] >          registeredListenersCount: 0,
+[info] >          _lastSuccessfulRequest: 1582753816916,
+[info] >          _backoffSettings: [Object],
+[info] >          _preferTransactions: false,
+[info] >          _clientPool: [ClientPool] },
+[info] >       _path: ResourcePath { segments: [Array] },
+[info] >       _converter:
+[info] >        { toFirestore: [Function: toFirestore],
+[info] >          fromFirestore: [Function: fromFirestore] } },
+[info] >    _serializer: Serializer { createReference: [Function] },
+[info] >    _readTime: Timestamp { _seconds: 1582753813, _nanoseconds: 721578000 },
+[info] >    _createTime: Timestamp { _seconds: 1582059992, _nanoseconds: 138018000 },
+[info] >    _updateTime: Timestamp { _seconds: 1582655989, _nanoseconds: 227822000 } }
+[info] >  TypeError: doc.data is not a function
+[info] >      at db.doc.update.then.doc (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:135:38)
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-26T21:50:17.107Z] [worker-api-6e81cac1-b530-4bd7-814f-e525c13b4d96]: IDLE
+[debug] [2020-02-26T21:50:17.107Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-02-26T21:51:32.150Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:51:33.151Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:51:33.151Z] [worker-~diagnostic~-93184fbe-1ec2-4bca-ad89-09d902fd62be]: FINISHING
+[debug] [2020-02-26T21:51:33.151Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-02-26T21:51:33.151Z] [worker-api-6e81cac1-b530-4bd7-814f-e525c13b4d96]: FINISHING
+[debug] [2020-02-26T21:51:33.155Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:51:33.156Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:51:33.156Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:51:33.156Z] [worker-~diagnostic~-3b02626f-7094-4514-924d-480879948ea7]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\15120
+[debug] [2020-02-26T21:51:33.156Z] [worker-~diagnostic~-3b02626f-7094-4514-924d-480879948ea7]: BUSY
+[debug] [2020-02-26T21:51:33.159Z] [worker-~diagnostic~-93184fbe-1ec2-4bca-ad89-09d902fd62be]: exited
+[debug] [2020-02-26T21:51:33.160Z] [worker-~diagnostic~-93184fbe-1ec2-4bca-ad89-09d902fd62be]: FINISHED
+[debug] [2020-02-26T21:51:33.160Z] [worker-api-6e81cac1-b530-4bd7-814f-e525c13b4d96]: exited
+[debug] [2020-02-26T21:51:33.160Z] [worker-api-6e81cac1-b530-4bd7-814f-e525c13b4d96]: FINISHED
+[debug] [2020-02-26T21:51:33.611Z] [runtime-status] [15120] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:51:33.612Z] [runtime-status] [15120] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:51:33.616Z] [runtime-status] [15120] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:51:33.618Z] [runtime-status] [15120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:51:33.620Z] [runtime-status] [15120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:51:34.291Z] [worker-~diagnostic~-3b02626f-7094-4514-924d-480879948ea7]: IDLE
+[debug] [2020-02-26T21:51:37.215Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-02-26T21:51:37.215Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-02-26T21:51:37.215Z] Accepted request POST /autonomous-escape-room/europe-west1/api/reservations --> api
+[debug] [2020-02-26T21:51:37.215Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:51:37.215Z] [worker-pool] Cleaned up workers for api: 4 --> 3
+[debug] [2020-02-26T21:51:37.218Z] [worker-pool] addWorker(api)
+[debug] [2020-02-26T21:51:37.219Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-02-26T21:51:37.219Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-26T21:51:37.219Z] [worker-api-d569c77e-4bfa-4ad0-9637-2b9612d0f7e7]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\6196
+[debug] [2020-02-26T21:51:37.219Z] [worker-api-d569c77e-4bfa-4ad0-9637-2b9612d0f7e7]: BUSY
+[debug] [2020-02-26T21:51:37.590Z] [runtime-status] [6196] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:51:37.591Z] [runtime-status] [6196] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:51:37.595Z] [runtime-status] [6196] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:51:37.596Z] [runtime-status] [6196] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:51:37.597Z] [runtime-status] [6196] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:51:38.287Z] [runtime-status] [6196] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-26T21:51:38.289Z] [runtime-status] [6196] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-26T21:51:38.289Z] [runtime-status] [6196] Running api in mode HTTPS
+[debug] [2020-02-26T21:51:38.291Z] [runtime-status] [6196] Attempting to listen to socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\6196
+[debug] [2020-02-26T21:51:38.294Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-26T21:51:38.313Z] [runtime-status] [6196] Ephemeral server handling POST request
+[debug] [2020-02-26T21:51:38.318Z] [runtime-status] [6196] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-26T21:51:39.273Z] [worker-api-d569c77e-4bfa-4ad0-9637-2b9612d0f7e7]: IDLE
+[debug] [2020-02-26T21:51:39.273Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[info] >  WriteResult {
+[info] >    _writeTime: Timestamp { _seconds: 1582753813, _nanoseconds: 899800000 } }
+[info] >  TypeError: doc.data is not a function
+[info] >      at db.doc.update.then.doc (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:135:38)
+[info] >  (node:6196) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[info] >      at ServerResponse.setHeader (_http_outgoing.js:470:11)
+[info] >      at ServerResponse.header (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\response.js:771:10)
+[info] >      at ServerResponse.send (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\response.js:170:12)
+[info] >      at ServerResponse.json (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\response.js:267:15)
+[info] >      at db.doc.update.then.catch.err (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:137:31)
+[info] >  (node:6196) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[info] >  (node:6196) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2020-02-26T21:52:56.047Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:52:57.049Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:52:57.049Z] [worker-~diagnostic~-3b02626f-7094-4514-924d-480879948ea7]: FINISHING
+[debug] [2020-02-26T21:52:57.049Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-02-26T21:52:57.049Z] [worker-api-d569c77e-4bfa-4ad0-9637-2b9612d0f7e7]: FINISHING
+[debug] [2020-02-26T21:52:57.055Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:52:57.055Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:52:57.055Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:52:57.055Z] [worker-~diagnostic~-a541598c-4e58-4bbb-8226-a3a0b4b368da]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\5588
+[debug] [2020-02-26T21:52:57.055Z] [worker-~diagnostic~-a541598c-4e58-4bbb-8226-a3a0b4b368da]: BUSY
+[debug] [2020-02-26T21:52:57.057Z] [worker-~diagnostic~-3b02626f-7094-4514-924d-480879948ea7]: exited
+[debug] [2020-02-26T21:52:57.057Z] [worker-~diagnostic~-3b02626f-7094-4514-924d-480879948ea7]: FINISHED
+[debug] [2020-02-26T21:52:57.058Z] [worker-api-d569c77e-4bfa-4ad0-9637-2b9612d0f7e7]: exited
+[debug] [2020-02-26T21:52:57.058Z] [worker-api-d569c77e-4bfa-4ad0-9637-2b9612d0f7e7]: FINISHED
+[debug] [2020-02-26T21:52:57.456Z] [runtime-status] [5588] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:52:57.458Z] [runtime-status] [5588] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:52:57.461Z] [runtime-status] [5588] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:52:57.462Z] [runtime-status] [5588] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:52:57.463Z] [runtime-status] [5588] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:52:58.143Z] [worker-~diagnostic~-a541598c-4e58-4bbb-8226-a3a0b4b368da]: IDLE
+[debug] [2020-02-26T21:53:00.543Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-02-26T21:53:00.543Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-02-26T21:53:00.543Z] Accepted request POST /autonomous-escape-room/europe-west1/api/reservations --> api
+[debug] [2020-02-26T21:53:00.543Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:53:00.543Z] [worker-pool] Cleaned up workers for api: 4 --> 3
+[debug] [2020-02-26T21:53:00.547Z] [worker-pool] addWorker(api)
+[debug] [2020-02-26T21:53:00.547Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-02-26T21:53:00.547Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-26T21:53:00.547Z] [worker-api-5572df64-4e85-4730-8c76-57f3c419df0e]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\15564
+[debug] [2020-02-26T21:53:00.547Z] [worker-api-5572df64-4e85-4730-8c76-57f3c419df0e]: BUSY
+[debug] [2020-02-26T21:53:00.928Z] [runtime-status] [15564] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:53:00.930Z] [runtime-status] [15564] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:53:00.933Z] [runtime-status] [15564] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:53:00.935Z] [runtime-status] [15564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:53:00.936Z] [runtime-status] [15564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:53:01.635Z] [runtime-status] [15564] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-26T21:53:01.636Z] [runtime-status] [15564] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-26T21:53:01.636Z] [runtime-status] [15564] Running api in mode HTTPS
+[debug] [2020-02-26T21:53:01.638Z] [runtime-status] [15564] Attempting to listen to socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\15564
+[debug] [2020-02-26T21:53:01.641Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-26T21:53:01.661Z] [runtime-status] [15564] Ephemeral server handling POST request
+[debug] [2020-02-26T21:53:01.664Z] [runtime-status] [15564] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-26T21:53:02.560Z] [worker-api-5572df64-4e85-4730-8c76-57f3c419df0e]: IDLE
+[debug] [2020-02-26T21:53:02.560Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[info] >  Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[info] >      at ServerResponse.setHeader (_http_outgoing.js:470:11)
+[info] >      at ServerResponse.header (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\response.js:771:10)
+[info] >      at ServerResponse.contentType (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\response.js:599:15)
+[info] >      at ServerResponse.sendStatus (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\response.js:357:8)
+[info] >      at db.doc.update.then.doc (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:133:119)
+[info] >  (node:15564) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[info] >      at ServerResponse.setHeader (_http_outgoing.js:470:11)
+[info] >      at ServerResponse.header (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\response.js:771:10)
+[info] >      at ServerResponse.send (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\response.js:170:12)
+[info] >      at ServerResponse.json (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\response.js:267:15)
+[info] >      at db.doc.update.then.catch.err (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:135:31)
+[info] >  (node:15564) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[info] >  (node:15564) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2020-02-26T21:55:21.142Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:55:22.143Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:55:22.143Z] [worker-~diagnostic~-a541598c-4e58-4bbb-8226-a3a0b4b368da]: FINISHING
+[debug] [2020-02-26T21:55:22.143Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-02-26T21:55:22.143Z] [worker-api-5572df64-4e85-4730-8c76-57f3c419df0e]: FINISHING
+[debug] [2020-02-26T21:55:22.147Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:55:22.147Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:55:22.147Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:55:22.147Z] [worker-~diagnostic~-9204e00d-8965-48f9-be34-fdf5f1e5b7c4]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\5596
+[debug] [2020-02-26T21:55:22.147Z] [worker-~diagnostic~-9204e00d-8965-48f9-be34-fdf5f1e5b7c4]: BUSY
+[debug] [2020-02-26T21:55:22.151Z] [worker-~diagnostic~-a541598c-4e58-4bbb-8226-a3a0b4b368da]: exited
+[debug] [2020-02-26T21:55:22.151Z] [worker-~diagnostic~-a541598c-4e58-4bbb-8226-a3a0b4b368da]: FINISHED
+[debug] [2020-02-26T21:55:22.152Z] [worker-api-5572df64-4e85-4730-8c76-57f3c419df0e]: exited
+[debug] [2020-02-26T21:55:22.152Z] [worker-api-5572df64-4e85-4730-8c76-57f3c419df0e]: FINISHED
+[debug] [2020-02-26T21:55:22.555Z] [runtime-status] [5596] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:55:22.557Z] [runtime-status] [5596] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:55:22.563Z] [runtime-status] [5596] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:55:22.565Z] [runtime-status] [5596] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:55:22.566Z] [runtime-status] [5596] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:55:23.220Z] [worker-~diagnostic~-9204e00d-8965-48f9-be34-fdf5f1e5b7c4]: IDLE
+[debug] [2020-02-26T21:57:34.635Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:57:35.635Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:57:35.636Z] [worker-~diagnostic~-9204e00d-8965-48f9-be34-fdf5f1e5b7c4]: FINISHING
+[debug] [2020-02-26T21:57:35.636Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:57:35.636Z] [worker-pool] Cleaned up workers for api: 4 --> 3
+[debug] [2020-02-26T21:57:35.642Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:57:35.642Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:57:35.642Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:57:35.642Z] [worker-~diagnostic~-73a9147f-272a-408b-9f04-679152fd130b]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\11964
+[debug] [2020-02-26T21:57:35.642Z] [worker-~diagnostic~-73a9147f-272a-408b-9f04-679152fd130b]: BUSY
+[debug] [2020-02-26T21:57:35.643Z] [worker-~diagnostic~-9204e00d-8965-48f9-be34-fdf5f1e5b7c4]: exited
+[debug] [2020-02-26T21:57:35.644Z] [worker-~diagnostic~-9204e00d-8965-48f9-be34-fdf5f1e5b7c4]: FINISHED
+[debug] [2020-02-26T21:57:36.012Z] [runtime-status] [11964] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:57:36.014Z] [runtime-status] [11964] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:57:36.018Z] [runtime-status] [11964] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:57:36.019Z] [runtime-status] [11964] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:57:36.020Z] [runtime-status] [11964] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:57:36.662Z] [worker-~diagnostic~-73a9147f-272a-408b-9f04-679152fd130b]: IDLE
+[debug] [2020-02-26T21:57:37.867Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:57:38.869Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:57:38.869Z] [worker-~diagnostic~-73a9147f-272a-408b-9f04-679152fd130b]: FINISHING
+[debug] [2020-02-26T21:57:38.869Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:57:38.874Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:57:38.874Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:57:38.874Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:57:38.874Z] [worker-~diagnostic~-46ab83f9-7ced-43fd-9199-1987257cf2ec]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\5208
+[debug] [2020-02-26T21:57:38.874Z] [worker-~diagnostic~-46ab83f9-7ced-43fd-9199-1987257cf2ec]: BUSY
+[debug] [2020-02-26T21:57:38.878Z] [worker-~diagnostic~-73a9147f-272a-408b-9f04-679152fd130b]: exited
+[debug] [2020-02-26T21:57:38.878Z] [worker-~diagnostic~-73a9147f-272a-408b-9f04-679152fd130b]: FINISHED
+[debug] [2020-02-26T21:57:39.228Z] [runtime-status] [5208] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:57:39.230Z] [runtime-status] [5208] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:57:39.233Z] [runtime-status] [5208] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:57:39.234Z] [runtime-status] [5208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:57:39.236Z] [runtime-status] [5208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:57:39.862Z] [worker-~diagnostic~-46ab83f9-7ced-43fd-9199-1987257cf2ec]: IDLE
+[debug] [2020-02-26T21:58:33.165Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:58:34.166Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T21:58:34.166Z] [worker-~diagnostic~-46ab83f9-7ced-43fd-9199-1987257cf2ec]: FINISHING
+[debug] [2020-02-26T21:58:34.166Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-26T21:58:34.169Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:58:34.169Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T21:58:34.169Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:58:34.169Z] [worker-~diagnostic~-ff4c7ee4-4227-4c4f-aa3c-c0ee7497d099]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\6060
+[debug] [2020-02-26T21:58:34.169Z] [worker-~diagnostic~-ff4c7ee4-4227-4c4f-aa3c-c0ee7497d099]: BUSY
+[debug] [2020-02-26T21:58:34.174Z] [worker-~diagnostic~-46ab83f9-7ced-43fd-9199-1987257cf2ec]: exited
+[debug] [2020-02-26T21:58:34.174Z] [worker-~diagnostic~-46ab83f9-7ced-43fd-9199-1987257cf2ec]: FINISHED
+[debug] [2020-02-26T21:58:34.561Z] [runtime-status] [6060] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:58:34.563Z] [runtime-status] [6060] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:58:34.565Z] [runtime-status] [6060] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:58:34.567Z] [runtime-status] [6060] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:58:34.568Z] [runtime-status] [6060] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  TypeError: Cannot read property 'length' of undefined
+    at pathtoRegexp (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\path-to-regexp\index.js:63:49)
+    at new Layer (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\router\layer.js:45:17)
+    at Function.route (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\router\index.js:494:15)
+    at Function.app.(anonymous function) [as put] (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\application.js:481:30)
+    at Object.<anonymous> (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:152:5)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-26T21:58:35.256Z] [worker-~diagnostic~-ff4c7ee4-4227-4c4f-aa3c-c0ee7497d099]: exited
+[debug] [2020-02-26T21:58:35.256Z] [worker-~diagnostic~-ff4c7ee4-4227-4c4f-aa3c-c0ee7497d099]: FINISHED
+[debug] [2020-02-26T21:58:45.332Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-02-26T21:58:45.332Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-02-26T21:58:45.332Z] Accepted request PUT /autonomous-escape-room/europe-west1/api/reservations --> api
+[debug] [2020-02-26T21:58:45.332Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-02-26T21:58:45.336Z] [worker-pool] addWorker(api)
+[debug] [2020-02-26T21:58:45.336Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-02-26T21:58:45.336Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-26T21:58:45.336Z] [worker-api-3ffd48b5-0433-43d9-a6d0-94df03d6219d]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\4316
+[debug] [2020-02-26T21:58:45.336Z] [worker-api-3ffd48b5-0433-43d9-a6d0-94df03d6219d]: BUSY
+[debug] [2020-02-26T21:58:45.696Z] [runtime-status] [4316] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:58:45.698Z] [runtime-status] [4316] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:58:45.701Z] [runtime-status] [4316] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:58:45.702Z] [runtime-status] [4316] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:58:45.704Z] [runtime-status] [4316] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  TypeError: Cannot read property 'length' of undefined
+    at pathtoRegexp (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\path-to-regexp\index.js:63:49)
+    at new Layer (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\router\layer.js:45:17)
+    at Function.route (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\router\index.js:494:15)
+    at Function.app.(anonymous function) [as put] (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\application.js:481:30)
+    at Object.<anonymous> (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:152:5)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-26T21:58:46.362Z] [worker-api-3ffd48b5-0433-43d9-a6d0-94df03d6219d]: exited
+[debug] [2020-02-26T21:58:46.362Z] [worker-api-3ffd48b5-0433-43d9-a6d0-94df03d6219d]: FINISHED
+[debug] [2020-02-26T21:58:59.233Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:59:00.234Z] [worker-pool] Cleaned up workers for api: 4 --> 3
+[debug] [2020-02-26T21:59:00.240Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:59:00.240Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-26T21:59:00.240Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:59:00.240Z] [worker-~diagnostic~-f44783ac-764b-402c-b1e8-73dd8ca725a6]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\6148
+[debug] [2020-02-26T21:59:00.240Z] [worker-~diagnostic~-f44783ac-764b-402c-b1e8-73dd8ca725a6]: BUSY
+[debug] [2020-02-26T21:59:00.627Z] [runtime-status] [6148] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:59:00.629Z] [runtime-status] [6148] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:59:00.632Z] [runtime-status] [6148] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:59:00.634Z] [runtime-status] [6148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:59:00.635Z] [runtime-status] [6148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  TypeError: Cannot read property 'length' of undefined
+    at pathtoRegexp (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\path-to-regexp\index.js:63:49)
+    at new Layer (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\router\layer.js:45:17)
+    at Function.route (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\router\index.js:494:15)
+    at Function.app.(anonymous function) [as put] (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\node_modules\express\lib\application.js:481:30)
+    at Object.<anonymous> (C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js:152:5)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-26T21:59:01.316Z] [worker-~diagnostic~-f44783ac-764b-402c-b1e8-73dd8ca725a6]: exited
+[debug] [2020-02-26T21:59:01.316Z] [worker-~diagnostic~-f44783ac-764b-402c-b1e8-73dd8ca725a6]: FINISHED
+[debug] [2020-02-26T21:59:04.455Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T21:59:05.456Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-26T21:59:05.466Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T21:59:05.466Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-26T21:59:05.466Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T21:59:05.466Z] [worker-~diagnostic~-cc2eaf3c-d5da-4a61-afbf-f6ed2288f167]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\13852
+[debug] [2020-02-26T21:59:05.466Z] [worker-~diagnostic~-cc2eaf3c-d5da-4a61-afbf-f6ed2288f167]: BUSY
+[debug] [2020-02-26T21:59:05.897Z] [runtime-status] [13852] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:59:05.899Z] [runtime-status] [13852] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:59:05.903Z] [runtime-status] [13852] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:59:05.905Z] [runtime-status] [13852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:59:05.907Z] [runtime-status] [13852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:59:06.625Z] [worker-~diagnostic~-cc2eaf3c-d5da-4a61-afbf-f6ed2288f167]: IDLE
+[debug] [2020-02-26T21:59:11.271Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-02-26T21:59:11.271Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-02-26T21:59:11.271Z] Accepted request PUT /autonomous-escape-room/europe-west1/api/reservations --> api
+[debug] [2020-02-26T21:59:11.277Z] [worker-pool] addWorker(api)
+[debug] [2020-02-26T21:59:11.277Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-02-26T21:59:11.277Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-26T21:59:11.277Z] [worker-api-3b8491a1-f614-4336-9e9b-9a6a5b00533f]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\6148
+[debug] [2020-02-26T21:59:11.277Z] [worker-api-3b8491a1-f614-4336-9e9b-9a6a5b00533f]: BUSY
+[debug] [2020-02-26T21:59:11.655Z] [runtime-status] [6148] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T21:59:11.656Z] [runtime-status] [6148] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T21:59:11.660Z] [runtime-status] [6148] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T21:59:11.661Z] [runtime-status] [6148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T21:59:11.662Z] [runtime-status] [6148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T21:59:12.323Z] [runtime-status] [6148] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-26T21:59:12.324Z] [runtime-status] [6148] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-26T21:59:12.324Z] [runtime-status] [6148] Running api in mode HTTPS
+[debug] [2020-02-26T21:59:12.326Z] [runtime-status] [6148] Attempting to listen to socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\6148
+[debug] [2020-02-26T21:59:12.329Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-26T21:59:12.348Z] [runtime-status] [6148] Ephemeral server handling PUT request
+[debug] [2020-02-26T21:59:12.352Z] [runtime-status] [6148] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-26T21:59:13.687Z] [worker-api-3b8491a1-f614-4336-9e9b-9a6a5b00533f]: IDLE
+[debug] [2020-02-26T21:59:13.687Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-02-26T22:01:09.182Z] File C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\index.js changed, reloading triggers
+[debug] [2020-02-26T22:01:10.184Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-26T22:01:10.184Z] [worker-~diagnostic~-cc2eaf3c-d5da-4a61-afbf-f6ed2288f167]: FINISHING
+[debug] [2020-02-26T22:01:10.184Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-02-26T22:01:10.184Z] [worker-api-3b8491a1-f614-4336-9e9b-9a6a5b00533f]: FINISHING
+[debug] [2020-02-26T22:01:10.187Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-26T22:01:10.188Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-26T22:01:10.188Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-26T22:01:10.188Z] [worker-~diagnostic~-00c9f899-d5b9-4594-8e86-b72ed808c904]: Assigning socketPath: \\?\pipe\C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\functions\5208
+[debug] [2020-02-26T22:01:10.188Z] [worker-~diagnostic~-00c9f899-d5b9-4594-8e86-b72ed808c904]: BUSY
+[debug] [2020-02-26T22:01:10.193Z] [worker-~diagnostic~-cc2eaf3c-d5da-4a61-afbf-f6ed2288f167]: exited
+[debug] [2020-02-26T22:01:10.193Z] [worker-~diagnostic~-cc2eaf3c-d5da-4a61-afbf-f6ed2288f167]: FINISHED
+[debug] [2020-02-26T22:01:10.193Z] [worker-api-3b8491a1-f614-4336-9e9b-9a6a5b00533f]: exited
+[debug] [2020-02-26T22:01:10.193Z] [worker-api-3b8491a1-f614-4336-9e9b-9a6a5b00533f]: FINISHED
+[debug] [2020-02-26T22:01:10.642Z] [runtime-status] [5208] Functions runtime initialized. {"cwd":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\functions","node_version":"10.16.3"}
+[debug] [2020-02-26T22:01:10.644Z] [runtime-status] [5208] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-26T22:01:10.648Z] [runtime-status] [5208] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-26T22:01:10.649Z] [runtime-status] [5208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\Users\Shaiel Cohen\Documents\Python Scripts\autonomous-escape-room\autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-02-26T22:01:10.650Z] [runtime-status] [5208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\Shaiel Cohen\\Documents\\Python Scripts\\autonomous-escape-room\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-26T22:01:11.324Z] [worker-~diagnostic~-00c9f899-d5b9-4594-8e86-b72ed808c904]: IDLE
