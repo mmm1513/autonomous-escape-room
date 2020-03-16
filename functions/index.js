@@ -20,6 +20,34 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 
+const AuthAutenticator = (req, res, next) => {
+  let idToken;
+  const authorization = req.headers.authorization;
+  if(authorization && authorization.startsWith('Bearer ')){
+    idToken = authorization.split('Bearer ')[1];
+  } else {
+    console.error('No token found');
+    return res.status(403).json({error: 'Unauthorized'});
+  }
+
+  admin.auth().verifyIdToken(idToken).then(decodedToken => {
+    req.currentUser = decodedToken;
+    return db.collection('users').where('userId', '==', req.currentUser.uid).limit(1).get();
+  }).then(data => {
+    req.currentUser.username = data.docs[0].data().username;
+    return next();
+  }).catch(err => {
+    console.error({error: err.code});
+    return res.status(403).json(err);
+  });
+}
+
+
+app.get('/tugy', AuthAutenticator, (req, res) => {
+  return res.status(200);
+})
+
+
 app.get('/groups', (req, res) => {
   db.collection('groups').get().then((data) => {
     let groups = [];
@@ -37,10 +65,10 @@ app.get('/groups', (req, res) => {
   }).catch((err) => console.error(err));
 })
 
-app.post('/groups', (req, res) => {
+app.post('/groups', AuthAutenticator, (req, res) => {
   const newGroup = {
     groupName: req.body.groupName,
-    users: req.body.users,
+    users: req.body.users.concat(req.currentUser.username),
     createAt: new Date().toISOString()
   };
   db.doc(`/groups/${newGroup.groupName}`).get().then(doc => {
@@ -54,8 +82,46 @@ app.post('/groups', (req, res) => {
     res.status(201).json(newGroup);
   }).catch(err => {
     console.error(err);
-      return res.status(500).json({error: err.code});
-  })
+    return res.status(500).json({error: err.code});
+  });
+});
+
+
+app.get('/groups/me', AuthAutenticator, (req, res) => {
+  return db.collection('groups').where('users', 'array-contains', req.currentUser.username).limit(1).get().then(data => {
+    const groupData = data.docs[0].data()
+    return res.status(200).json({
+      groupName: groupData.groupName,
+      createAt: groupData.createAt,
+      roomStartTime: groupData.roomStartTime,
+      roomFinishTime: groupData.roomFinishTime,
+      score: groupData.score,
+      invitedUsersId: groupData.invitedUsersId,
+      users: groupData.users
+  });
+  }).catch(err => {
+    console.error({error: err.code});
+    return res.status(400).json(err);
+  });
+});
+
+
+app.post('/login', (req, res) => {
+  const user = {
+    email: req.body.email,
+    password: req.body.password
+  };
+  firebase.auth().signInWithEmailAndPassword(user.email, user.password).then(data => {
+    return data.user.getIdToken();
+  }).then(token => {
+    return res.status(200).json({ token });
+  }).catch(err => {
+    console.error(err);
+    if(err.code === 'auth/wrong-password') {
+      return res.status(403).json({auth: 'credentials are not valid'})
+    }
+    return res.status(500).json({error: err.code});
+  });
 });
 
 app.post('/signup', (req, res) => {
