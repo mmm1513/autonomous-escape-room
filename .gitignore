@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -63,3 +64,7 @@ node_modules/
 
 # dotenv environment variables file
 .env
+=======
+node_modules
+autonomous-escape-room-firebase-adminsdk-x8u0m-a97895cf17.json
+>>>>>>> ecd2fb28183220cb9d317a536ee041369b2aea37
