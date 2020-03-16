@@ -65,3 +65,4 @@ node_modules/
 .env
 
 autonomous-escape-room-*.json
+node_modules
